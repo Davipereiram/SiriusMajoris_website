@@ -1,0 +1,129 @@
+/*Escopo principal*/
+
+body{
+    margin: auto;
+    background-color: #f0f0f0;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#f2f2f2;
+    font-size: 22px;
+}
+
+
+    
+    
+/*Barra de navegação*/
+.nav_bar{
+    border: white; min-width: min-content; min-height: min-content;
+    display: grid;
+    margin: 0;
+    height: 5 rem;
+    background: #101010;
+    border-bottom: solid white;
+}
+
+.nav_bar a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.nav_bar a:hover{
+    opacity: 1;
+    background-color: aquamarine;
+    color: #101010;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(42, 41, 58);
+    align-items: center;
+    padding-top: 40px;
+}
+
+/*Contéudo*/
+.conteudo{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+    width: 80%;
+}
+
+.amostra_post{
+    display: flex;
+    width: min-content;
+    height: auto;
+    margin: 2rem;
+    border: solid #727272 5px; 
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    background-color: rgba(3, 3, 3, 0.89);
+    border-radius: 10px;
+}
+
+.amostra{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    position: relative;
+    height: fit-content;
+    border-left: #f0f0f09f solid 1px;
+    border-right: #f0f0f09f solid 1px;
+}
+
+.amostra :last-of-type{
+    margin-right: 0;
+}
+
+.text{
+    position: absolute;
+    width: 100%;
+    background-color: #2021248a;
+    /* animation: MoveUpDown 1s linear; */
+    left: 0%;
+    bottom: 0%; 
+}
+
+
+.text p{
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.amostra div:hover{
+    opacity: 1;
+}
+
+.img1{
+    display: block;
+    opacity: 0.7;
+    transition: 0.3s;
+    
+}
+
+.img1:hover{
+    opacity: 1;
+}
+
+.pagina{
+    margin: 2rem;
+    background-color: #f2f2f2;
+    color: #101010;
+}
+
+.pagina h1{
+    margin: 3rem;
+}
+
+.pagina p{
+    margin: 2rem;
+}
