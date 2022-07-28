@@ -1,41 +1,20 @@
-/*Escopo principal*/
-
-body{
-    margin: auto;
-    background-color: #202124;
-    font-family: Arial, sans-serif; 
-    color:#f2f2f2 
-}
+@import url(parent.css);
         
-/*Barra de navegação*/
-.nav_bar{
-    border: white; min-width: min-content; min-height: min-content;
-    display: grid;
-    margin: 0;
-    height: 5 rem;
-    background: #101010;
-}
-    
-.nav_bar a{
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 14px;
-    text-decoration: none;
-    font-size: 17px;
-}
-    
-.nav_bar a:hover{
-    background-color: aquamarine;
-    color: #101010;
-}
-
 .active{
     background-color: aquamarine;
-    color: #101010;
+    color: rgb(42, 41, 58);
 }
 
 .sobre{
-    margin: 1rem;
+    margin-left: 15vh;
+    margin-right: 15vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.sobre img{
+    width: 300px;
     
 }
