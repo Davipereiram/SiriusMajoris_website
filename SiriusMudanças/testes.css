@@ -5,12 +5,9 @@ body{
     background-color: #f0f0f0;
     font-family:Arial, Helvetica, sans-serif;
     color:#f2f2f2;
-    font-size: 22px;
+    font-size: 20px;
 }
 
-
-    
-    
 /*Barra de navegação*/
 .nav_bar{
     border: white; min-width: min-content; min-height: min-content;
@@ -21,20 +18,38 @@ body{
     border-bottom: solid white;
 }
 
-.nav_bar a{
+.nav_item {
     float: left;
-    color: #f2f2f2;
     text-align: center;
     padding: 14px 14px;
-    text-decoration: none;
     font-size: 17px;
     transition: 0.3s;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
-.nav_bar a:hover{
+.nav_item a{
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+.nav_item:hover{
     opacity: 1;
-    background-color: aquamarine;
-    color: #101010;
+    background-color: rgb(244, 215, 248);
+}
+
+.nav_item:hover a{
+    color: black;
+}
+
+.nav_item:first-of-type:hover{
+    float: left;
+    text-align: center;
+    padding: 14px 14px;
+    font-size: 17px;
+    transition: 0.3s;
+    background-color: #10101000;
 }
 
 .main{
@@ -54,7 +69,7 @@ body{
     align-content: center;
     justify-content: center;
     align-items: stretch;
-    width: 80%;
+    width: 85%;
 }
 
 .amostra_post{
@@ -62,11 +77,11 @@ body{
     width: min-content;
     height: auto;
     margin: 2rem;
-    border: solid #727272 5px; 
+    border: solid #ffffff 2px; 
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: flex-start;
-    background-color: rgba(3, 3, 3, 0.89);
+    background-color: rgba(0, 0, 0, 0.89);
     border-radius: 10px;
 }
 
@@ -118,6 +133,9 @@ body{
     margin: 2rem;
     background-color: #f2f2f2;
     color: #101010;
+    border-radius: 20px;
+    border: solid black 3px;
+    padding: 10px;
 }
 
 .pagina h1{
