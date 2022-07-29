@@ -130,6 +130,7 @@
     max-height: 250px;
     width: 100%;
     border-radius: 20px;
+    object-fit: cover;
 }
 
 .img_overlay{
@@ -164,6 +165,7 @@
         transition: 400ms;
         opacity: 1;
     }
+
 }
 
 @media screen and (max-width: 1150px) {
@@ -223,6 +225,10 @@
     .container_ceu button{
         margin-top: 20px;
         width: 60vh;
+    }
+
+    .trab{
+        width: 70vw;
     }
 }
 
