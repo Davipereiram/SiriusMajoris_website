@@ -84,5 +84,9 @@ body{
 }
 
 .historia h2{
-    color: blue;
+    color: rgb(255, 255, 255);
+}
+
+.historia p{
+    color: bisque;
 }
