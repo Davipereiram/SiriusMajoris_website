@@ -1,88 +1,132 @@
 @import url(parent.css);
-        
-body{
-    background-color: rgb(231, 229, 229);
-    color: rgb(42, 41, 58);
+
+.conteudo svg{
+    display: block;
 }
 
+.cont_sobre{
+    margin-top: 30px;
+    padding-left: 15vh;
+    padding-right: 15vh;
 
-/* Conteúdo do site */
-.conteudo{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-}
-
-
-/*  Sobre o clube */
-.sobre{
-    padding: 12px; 
-    margin-left: 20vh;
-    margin-right: 20vh;
+    align-items: center;
 
     display: flex;
     flex-direction: row;
     justify-content: center;
-    max-width: max-content;
-    height: 70vh;
+    padding-top: 30px;
 }
 
-.sobre img{
-    width: 300px;
-    border-radius: 10px;
-}
-#text{
-    margin: 3rem
-}
-#text h2{
-    text-align: left;
-    font-size: 60px;
-}
+.cont_quem{
+    padding-left: 15vh;
+    padding-right: 15vh;
 
-/* Transição */
-:root{
-    --primary: rgba(231, 229, 229, 0.966);
-    --secundary: rgb(137, 43, 226);
-}
-
-.transition{
-    background: linear-gradient(180deg, var(--primary), var(--secundary)), no-repeat, rgb(0, 0, 0);
-    background-size: cover;
-    height: 30px;
-}
-
-/* História do clube */
-#alinhamento{
-    background-color: rgb(138, 43, 226);
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-
-
-    width: 100vw;
-    height: 90vh;
-}
-
-.historia{
     display: flex;
     flex-direction: row-reverse;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
     align-items: center;
-
-    padding: 12px;
-    margin-left: 15vh;
-    margin-right: 15vh;
+    
+    background-color: rgb(24, 23, 46);
+    color: #ececec;
 }
 
-.historia img{
-    background-color: aliceblue;
+.cont_sobre img{
+    border-radius: 20px;
+    max-width: 25vw;
+    max-height: 25vw;
+    margin-left: 5em;
+}
 
-    width: 30vw;
-    height: 30vw;
-    border-radius: 10%;
+.cont_quem img{
+    border-radius: 20px;
+    max-width: 25vw;
+    max-height: 25vw;
+    margin-right: 5em;
+}
+
+.cont_mvo{
+    padding-left: 15vh;
+    padding-right: 15vh;
+    margin-top: 30px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.cont_mvo div{
+    padding-left: 3em;
+    text-align: justify;
+}
+
+.cont_mvo div:first-of-type{
+    padding-left: 0;
+}
+
+/*  Responsivo */
+
+@media screen and (max-width: 1100px){
+    
+    .cont_mvo{
+        flex-direction: column;
+    }
+
+    .cont_mvo div{
+        padding-left: 0em;
+        text-align: justify;
+    }
 
 }
 
-.historia h2{
-    color: blue;
+@media screen and (max-width: 960px){
+
+    .cont_sobre{
+        flex-direction: column;
+        text-align: justify;
+        justify-content: center;
+    }
+    .cont_quem{
+        flex-direction: column;
+        text-align: justify;
+        justify-content: center;
+    }
+
+    .cont_sobre img,
+    .cont_quem img{
+        margin: 0;
+        max-width: 400px;
+        max-height: 400px;
+        height: auto;
+        width: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+
+    .cont_sobre,
+    .cont_quem,
+    .cont_mvo{
+        padding-left: 8vw;
+        padding-right: 8vw;
+    }
+
+    .cont_quem img,
+    .cont_sobre img{
+        max-width: 300px;
+        max-height: 300px;
+    }
+
+}
+
+@media screen and (max-width: 640px){
+
+}
+
+@media screen and (max-width: 450px){
+
 }
