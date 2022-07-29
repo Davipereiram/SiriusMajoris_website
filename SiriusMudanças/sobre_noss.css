@@ -1,20 +1,76 @@
 @import url(parent.css);
         
-.active{
-    background-color: aquamarine;
+body{
+    background-color: rgb(231, 229, 229);
     color: rgb(42, 41, 58);
 }
+/* Conteúdo do site */
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
 
+
+/*  Sobre o clube */
 .sobre{
-    margin-left: 15vh;
-    margin-right: 15vh;
+    padding: 12px; 
+    margin-left: 20vh;
+    margin-right: 20vh;
 
     display: flex;
     flex-direction: row;
     justify-content: center;
+    max-width: max-content;
+    height: 70vh;
 }
 
 .sobre img{
     width: 300px;
-    
+    border-radius: 10px;
+}
+.text{
+    margin: 3rem
+}
+.text h2{
+    text-align: left;
+    font-size: 60px;
+}
+/* Transição */
+:root{
+    --primary: rgba(231, 229, 229, 0.966);
+    --secundary: rgb(137, 43, 226);
+}
+
+.transition{
+    background: linear-gradient(180deg, var(--primary), var(--secundary)), no-repeat, rgb(0, 0, 0);
+    background-size: cover;
+    height: 30px;
+}
+
+/* História do clube */
+
+
+#alinhamento{
+    background-color: rgb(138, 43, 226);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 90vh;
+}
+
+#alinhamento2{
+    display: flex;
+    flex-direction: column;
+}
+
+.historia{
+
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 12px;
+    margin-left: 15vh;
+    margin-right: 15vh;
 }
