@@ -4,6 +4,8 @@ body{
     background-color: rgb(231, 229, 229);
     color: rgb(42, 41, 58);
 }
+
+
 /* Conteúdo do site */
 .conteudo{
     display: flex;
@@ -29,13 +31,14 @@ body{
     width: 300px;
     border-radius: 10px;
 }
-.text{
+#text{
     margin: 3rem
 }
-.text h2{
+#text h2{
     text-align: left;
     font-size: 60px;
 }
+
 /* Transição */
 :root{
     --primary: rgba(231, 229, 229, 0.966);
@@ -49,28 +52,37 @@ body{
 }
 
 /* História do clube */
-
-
 #alinhamento{
     background-color: rgb(138, 43, 226);
-
+    
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
+
+
     width: 100vw;
     height: 90vh;
 }
 
-#alinhamento2{
-    display: flex;
-    flex-direction: column;
-}
-
 .historia{
-
     display: flex;
     flex-direction: row-reverse;
+    align-items: center;
+
     padding: 12px;
     margin-left: 15vh;
     margin-right: 15vh;
+}
+
+.historia img{
+    background-color: aliceblue;
+
+    width: 30vw;
+    height: 30vw;
+    border-radius: 10%;
+
+}
+
+.historia h2{
+    color: blue;
 }

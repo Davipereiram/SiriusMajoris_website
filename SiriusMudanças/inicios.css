@@ -21,7 +21,7 @@
 }
 
 .bg{
-    background-image: url("/imgs/hbackground.jpg");
+    background-image: url("./imgs/hbackground.jpg");
 
     height: 80vh; 
 
@@ -132,7 +132,7 @@
 }
 
 .timg:hover + .img_center{
-    transition: 300ms;
+    transition: 1000ms;
     opacity: 1;
 }
 
