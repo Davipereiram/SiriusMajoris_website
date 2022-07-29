@@ -1,3 +1,5 @@
+/*  ANIMATION AND  */
+
 @import url(parent.css);
 
 @keyframes cont_show1 {
@@ -9,21 +11,20 @@
     }
 }
 
+/*------------------------------*/
+
+
 .main-title{
     display: grid;
     place-content: center;
     place-items: center;
 }
-/*-----------------------------*/
 
 .bg{
-    /* The image used */
     background-image: url("/imgs/hbackground.jpg");
 
-    /* Full height */
     height: 80vh; 
 
-    /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -32,7 +33,7 @@
     align-items: center;
     justify-content: center;
 
-    margin-bottom: 70px;
+    margin-bottom: 80px;
 }
 
 .bg h1{
@@ -43,6 +44,8 @@
     border-bottom: solid 1px ;
 }
 
+
+/* CONTAINER 1 */
 .container_ceu{
     margin-left: 15vh;
     margin-right: 15vh;
@@ -50,6 +53,7 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
+    padding-bottom: 30px;
 }
 
 .container_ceu img{
@@ -76,7 +80,7 @@
 }
 
 .c1_text button{
-    background-color: rgb(32, 32, 95);
+    background-color: rgb(26, 45, 80);
     border: 0;
     color: white;
     padding: 10px 20px;
@@ -89,6 +93,64 @@
     background-color: rgb(103, 103, 179);
     cursor: pointer;
 }
+
+/*------------------------------*/
+
+
+/* CONTAINER 2 */
+
+.container_trab{
+    background-color: rgb(26, 45, 80);
+    color: rgb(243, 247, 253);
+}
+
+.container_trab h2{
+    padding-top: 30px;
+    text-align: center;
+    padding-bottom: 20px;
+    
+}
+
+.trabs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.trab img{
+    max-height: 250px;
+    width: 370px;
+    border-radius: 20px;
+}
+
+.timg:hover{
+    transition: 300ms;
+    opacity: 0.4;
+}
+
+.timg:hover + .img_center{
+    transition: 300ms;
+    opacity: 1;
+}
+
+.trab .img_center{
+    position: absolute;
+    text-align: center;
+    bottom: 50%;
+    top: 50%;
+    padding-left: 40px;
+    font-size: 2rem;
+    opacity: 0;
+    color: white;
+}
+
+
+
+/*------------------------------*/
+
 
 @media screen and (max-width: 1014px){
     .container_ceu{
