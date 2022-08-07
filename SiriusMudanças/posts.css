@@ -30,7 +30,7 @@
     align-self: center;
 }
 
-.search input[type=text]{
+.search input[type=search]{
     border: 0;
     height: 35px;
     width: 25em;
@@ -72,6 +72,12 @@
 
 .post img{
     border-radius: 20px;
+}
+
+.post h3{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 20px;
 }
 
 .post p{
